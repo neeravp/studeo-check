@@ -4,6 +4,7 @@ This document provides reference documentation for the `studeo/check` static-ana
 
 ## Table of Contents
 
+<!-- generated:contents -->
 - [1. Overview and Conventions](#1-overview-and-conventions)
 - [2. Contracts](#2-contracts)
   - [Rule](#rule)
@@ -37,9 +38,25 @@ This document provides reference documentation for the `studeo/check` static-ana
   - [`syntax`](#syntax)
   - [`baseline`](#baseline-1)
 - [4. Rule Sets and Profiles](#4-rule-sets-and-profiles)
+  - [`Cap1Rules`](#cap1rules)
+  - [`ActionRules`](#actionrules)
+  - [`LaravelRules`](#laravelrules)
+  - [`RuleSet::merge`](#rulesetmerge)
+  - [Writing a Provider Class for `check.php`](#writing-a-provider-class-for-checkphp)
 - [5. Command Line](#5-command-line)
+  - [Usage](#usage)
+  - [Arguments](#arguments)
+  - [Options](#options)
+  - [Path Rules](#path-rules)
+  - [Rule Set Discovery Order](#rule-set-discovery-order)
+  - [Reading `composer.json`](#reading-composerjson)
+  - [Exit Codes and Stderr Messages](#exit-codes-and-stderr-messages)
+  - [Text Output Format](#text-output-format)
+  - [JSON Schema](#json-schema)
+  - [Baseline File Format](#baseline-file-format)
 - [6. Known Behaviour](#6-known-behaviour)
 - [7. Writing a Rule](#7-writing-a-rule)
+<!-- /generated:contents -->
 
 ---
 

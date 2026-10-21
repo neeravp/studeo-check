@@ -166,23 +166,31 @@ Emitted when a baseline entry no longer matches any active violation.
 
 ## 9. Rule Identifiers and Option Schema
 
-| Rule ID | Tier | Options with Type and Default | Default Scope | Severity |
-| --- | --- | --- | --- | --- |
-| `method-complexity` | 2 | `int $max = 2`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` | `error` |
-| `file-length` | 2 | `int $target = 230`<br>`int $hard = 300`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` | `error` (hard)<br>`warning` (target) |
-| `method-naming` | 2 | `array $banned = ['process', 'processData', 'handleData', 'doStuff', 'doWork']`<br>`array $scope = Scope::ALL` | `Scope::ALL` | `error` |
-| `step-count` | 2 | `int $max = 8`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` | `error` |
-| `nesting-depth` | 2 | `int $max = 1`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` | `error` |
-| `condition-extraction` | 2 | `array $scope = Scope::APP_CODE` | `Scope::APP_CODE` | `error` |
-| `action-shape` | 3 | `array $scope = ['Actions']` | `['Actions']` | `error` |
-| `action-authorization` | 3 | `string $systemAttribute`<br>`array $scope = ['Actions']`<br>`string $attributionHint = 'carry attribution in an Input field'` | `['Actions']` | `error` |
-| `migration` | 3 | `array $forbidden = ['\\Models\\', '\\Actions\\', '\\Data\\', '\\Enums\\']`<br>`array $scope = ['database/migrations']` | `['database/migrations']` | `error` |
-| `system-action-usage` | 3 | `string $systemAttribute`<br>`array $forbiddenIn = ['Controllers', 'Middleware', 'ApiResources', 'Livewire']`<br>`array $scope = Scope::ALL` | `Scope::ALL` | `error` |
-| `dto-shape` | 3 | `string $inputBase`<br>`string $outputBase`<br>`array $scope = ['Data']` | `['Data']` | `error` |
-| `no-dto-in-livewire-state` | 3 | `string $inputBase`<br>`string $outputBase`<br>`array $scope = ['Livewire']` | `['Livewire']` | `error` |
+<!-- generated:rule-options -->
+| Rule ID | Tier | Options with Type and Default | Default Scope |
+| --- | --- | --- | --- |
+| `method-complexity` | 2 | `int $max = 2`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` |
+| `file-length` | 2 | `int $target = 230`<br>`int $hard = 300`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` |
+| `method-naming` | 2 | `array $banned = ['process', 'processData', 'handleData', 'doStuff', 'doWork']`<br>`array $scope = Scope::ALL` | `Scope::ALL` |
+| `step-count` | 2 | `int $max = 8`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` |
+| `nesting-depth` | 2 | `int $max = 1`<br>`array $scope = Scope::APP_CODE` | `Scope::APP_CODE` |
+| `condition-extraction` | 2 | `array $scope = Scope::APP_CODE` | `Scope::APP_CODE` |
+| `action-shape` | 3 | `array $scope = ['Actions']` | `['Actions']` |
+| `system-action-usage` | 3 | `string $systemAttribute`<br>`array $forbiddenIn = ['Controllers', 'Middleware', 'ApiResources', 'Livewire']`<br>`array $scope = Scope::ALL` | `Scope::ALL` |
+| `action-authorization` | 3 | `string $systemAttribute`<br>`array $scope = ['Actions']`<br>`string $attributionHint = 'carry attribution in an Input field'` | `['Actions']` |
+| `dto-shape` | 3 | `string $inputBase`<br>`string $outputBase`<br>`array $scope = ['Data']` | `['Data']` |
+| `migration` | 3 | `array $forbidden = ['\\Models\\', '\\Actions\\', '\\Data\\', '\\Enums\\']`<br>`array $scope = ['database/migrations']` | `['database/migrations']` |
+| `no-dto-in-livewire-state` | 3 | `string $inputBase`<br>`string $outputBase`<br>`array $scope = ['Livewire']` | `['Livewire']` |
+<!-- /generated:rule-options -->
 
-`Scope::ALL` corresponds to `['.']`. `Scope::APP_CODE` corresponds to:
-`['Actions', 'Commands', 'Concerns', 'Controllers', 'Data', 'Jobs', 'Listeners', 'Livewire', 'Middleware', 'Policies', 'Services']`.
+The severity of each rule is stated in its section in Section 10.
+
+The scope constants:
+
+<!-- generated:scope-constants -->
+- `Scope::ALL` corresponds to `['.']`
+- `Scope::APP_CODE` corresponds to `['Actions', 'Commands', 'Concerns', 'Controllers', 'Data', 'Jobs', 'Listeners', 'Livewire', 'Middleware', 'Policies', 'Services']`
+<!-- /generated:scope-constants -->
 
 ## 10. Rules
 
