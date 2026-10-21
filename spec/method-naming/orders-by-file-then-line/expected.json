@@ -1,0 +1,26 @@
+[
+    {
+        "rule": "method-naming",
+        "file": "app/Services/AlphaService.php",
+        "line": 7,
+        "subject": "AlphaService::process",
+        "severity": "error",
+        "message": "method name 'process' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    },
+    {
+        "rule": "method-naming",
+        "file": "app/Services/AlphaService.php",
+        "line": 9,
+        "subject": "AlphaService::doWork",
+        "severity": "error",
+        "message": "method name 'doWork' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    },
+    {
+        "rule": "method-naming",
+        "file": "app/Services/BetaService.php",
+        "line": 7,
+        "subject": "BetaService::handleData",
+        "severity": "error",
+        "message": "method name 'handleData' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    }
+]

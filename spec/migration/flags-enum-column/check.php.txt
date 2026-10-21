@@ -1,0 +1,14 @@
+<?php
+
+use Studeo\Check\Engine\RuleSet;
+use Studeo\Check\Rules\Laravel\Migration;
+
+final class CheckRules
+{
+    public function rules(): RuleSet
+    {
+        return RuleSet::of(Migration::options());
+    }
+}
+
+return CheckRules::class;

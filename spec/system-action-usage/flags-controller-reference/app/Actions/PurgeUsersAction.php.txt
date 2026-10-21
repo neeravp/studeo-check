@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Actions;
+
+use App\Attributes\SystemAction;
+
+#[SystemAction]
+final class PurgeUsersAction
+{
+    public function __invoke(): void {}
+}

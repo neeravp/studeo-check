@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Services;
+
+final class NestedService
+{
+    public function check(bool $a): void
+    {
+        if ($a) {
+            return;
+        }
+    }
+}

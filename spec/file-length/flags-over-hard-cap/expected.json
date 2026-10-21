@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "file-length",
+        "file": "app/Services/LongService.php",
+        "line": 1,
+        "subject": "file",
+        "severity": "error",
+        "message": "16 lines exceeds the hard cap of 15. Split by responsibility."
+    }
+]

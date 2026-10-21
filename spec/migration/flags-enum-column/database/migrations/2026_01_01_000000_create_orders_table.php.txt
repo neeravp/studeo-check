@@ -1,0 +1,13 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration as BaseMigration;
+use Illuminate\Database\Schema\Blueprint;
+
+return new class extends BaseMigration
+{
+    public function up(): void
+    {
+        $table = new Blueprint('orders');
+        $table->enum('status', ['pending', 'completed']);
+    }
+};

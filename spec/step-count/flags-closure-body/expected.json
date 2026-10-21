@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "step-count",
+        "file": "app/Services/ClosureService.php",
+        "line": 9,
+        "subject": "ClosureService::run{closure}",
+        "severity": "error",
+        "message": "9 statements (max 8). Group steps into named private helpers so the method reads as a short pipeline."
+    }
+]

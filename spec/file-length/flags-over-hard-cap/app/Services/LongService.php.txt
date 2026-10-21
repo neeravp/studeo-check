@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Services;
+
+final class LongService
+{
+    public int $a1 = 1;
+    public int $a2 = 2;
+    public int $a3 = 3;
+    public int $a4 = 4;
+    public int $a5 = 5;
+    public int $a6 = 6;
+    public int $a7 = 7;
+    public int $a8 = 8;
+    public int $a9 = 9;
+}

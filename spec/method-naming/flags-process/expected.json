@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "method-naming",
+        "file": "app/Services/OrderService.php",
+        "line": 7,
+        "subject": "OrderService::process",
+        "severity": "error",
+        "message": "method name 'process' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    }
+]

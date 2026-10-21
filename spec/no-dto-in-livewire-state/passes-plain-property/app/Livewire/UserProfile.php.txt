@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Livewire;
+
+use App\Data\UserData;
+
+class UserProfile
+{
+    public string $user;
+}

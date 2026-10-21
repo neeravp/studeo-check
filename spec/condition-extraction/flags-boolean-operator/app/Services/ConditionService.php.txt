@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Services;
+
+final class ConditionService
+{
+    public function verify(bool $a, bool $b): int
+    {
+        if ($a && $b) {
+            return 1;
+        }
+
+        return 0;
+    }
+}

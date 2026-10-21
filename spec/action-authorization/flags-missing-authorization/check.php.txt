@@ -1,0 +1,16 @@
+<?php
+
+use Studeo\Check\Engine\RuleSet;
+use Studeo\Check\Rules\Laravel\ActionAuthorization;
+
+final class CheckRules
+{
+    public function rules(): RuleSet
+    {
+        return RuleSet::of(ActionAuthorization::options(
+            systemAttribute: 'App\Attributes\SystemAction',
+        ));
+    }
+}
+
+return CheckRules::class;

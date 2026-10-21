@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "method-complexity",
+        "file": "app/Services/ComplexityService.php",
+        "line": 7,
+        "subject": "ComplexityService::calculate",
+        "severity": "error",
+        "message": "3 if/elseif statements (max 2). Use an early return, match(), or extract a named helper."
+    }
+]

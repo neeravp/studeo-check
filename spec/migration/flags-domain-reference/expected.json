@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "migration",
+        "file": "database/migrations/2026_01_01_000000_create_orders_table.php",
+        "line": 3,
+        "subject": "App\\Models\\Order",
+        "severity": "error",
+        "message": "references domain class App\\Models\\Order. Migrations must not use models, actions, data objects or enums; write the values out."
+    }
+]

@@ -1,0 +1,14 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 8
+    reportUnmatchedIgnoredErrors: true
+    paths:
+        - Console
+        - Engine
+        - Exceptions
+        - Profiles
+        - Rules
+        - bin/check
+    treatPhpDocTypesAsCertain: false

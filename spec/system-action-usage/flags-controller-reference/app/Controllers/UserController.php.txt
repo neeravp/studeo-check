@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Actions\PurgeUsersAction;
+
+final class UserController
+{
+    public function destroy(PurgeUsersAction $action): void
+    {
+        $action();
+    }
+}

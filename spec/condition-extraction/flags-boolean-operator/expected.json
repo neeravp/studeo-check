@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "condition-extraction",
+        "file": "app/Services/ConditionService.php",
+        "line": 7,
+        "subject": "ConditionService::verify",
+        "severity": "error",
+        "message": "1 boolean operator outside a one-line helper. Move the expression into a private method named for what it means, such as hasActiveSubscription(), whose body is return …;"
+    }
+]

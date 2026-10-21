@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "no-dto-in-livewire-state",
+        "file": "app/Livewire/UserProfile.php",
+        "line": 9,
+        "subject": "UserProfile::$user",
+        "severity": "error",
+        "message": "public property $user is typed App\\Data\\UserData, a DTO. Hold plain snake_case state (strings, numbers, arrays) and build the Input in toInput()."
+    }
+]

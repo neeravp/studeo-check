@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "syntax",
+        "file": "app/Services/BrokenService.php",
+        "line": 6,
+        "subject": "file",
+        "severity": "error",
+        "message": "does not parse: Syntax error, unexpected EOF. Fix the syntax; no other rule can check this file until it parses."
+    }
+]

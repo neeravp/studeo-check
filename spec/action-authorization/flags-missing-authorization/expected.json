@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "action-authorization",
+        "file": "app/Actions/CreateUserAction.php",
+        "line": 5,
+        "subject": "App\\Actions\\CreateUserAction",
+        "severity": "error",
+        "message": "an Action must authorize but is missing an Authenticatable $actor parameter on __invoke() and a Gate::forUser($actor)->authorize(...) call. Add them, or mark the Action #[SystemAction] if it must run without an actor."
+    }
+]

@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Services;
+
+final class OrderService
+{
+    public function process(): void {}
+
+    public function doWork(): void {}
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "system-action-usage",
+        "file": "app/Controllers/UserController.php",
+        "line": 5,
+        "subject": "App\\Actions\\PurgeUsersAction",
+        "severity": "error",
+        "message": "references the system Action App\\Actions\\PurgeUsersAction. System Actions are callable only from Actions, Listeners and Jobs. Call an authorizing Action instead, or move this call into a Job or Listener."
+    }
+]

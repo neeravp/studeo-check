@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+foreach ([
+    __DIR__.'/../../../autoload.php',
+    __DIR__.'/../autoload.php',
+    __DIR__.'/../vendor/autoload.php',
+] as $file) {
+    if (file_exists($file)) {
+        require $file;
+        break;
+    }
+}
+
+use Studeo\Check\Console\CheckCommand;
+use Symfony\Component\Console\Application;
+
+$command = new CheckCommand;
+$application = new Application('check');
+$application->addCommand($command);
+$application->setDefaultCommand($command->getName() ?? 'check', true);
+$application->run();

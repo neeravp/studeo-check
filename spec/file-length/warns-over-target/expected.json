@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "file-length",
+        "file": "app/Services/TargetService.php",
+        "line": 1,
+        "subject": "file",
+        "severity": "warning",
+        "message": "12 lines exceeds the 10-line target. Extract a collaborator or helper class."
+    }
+]

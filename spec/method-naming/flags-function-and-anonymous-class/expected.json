@@ -1,0 +1,18 @@
+[
+    {
+        "rule": "method-naming",
+        "file": "app/Services/MiscService.php",
+        "line": 5,
+        "subject": "doStuff()",
+        "severity": "error",
+        "message": "method name 'doStuff' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    },
+    {
+        "rule": "method-naming",
+        "file": "app/Services/MiscService.php",
+        "line": 12,
+        "subject": "class@anonymous::doWork",
+        "severity": "error",
+        "message": "method name 'doWork' says nothing about intent. Use context-rich phrasing such as sanitizeNameParameter() or verifyActiveSubscriptionStatus()."
+    }
+]

@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Services;
+
+final class ComplexityService
+{
+    public function calculate(int $a, int $b): int
+    {
+        if ($a > 0) {
+            return 1;
+        } elseif ($b > 0) {
+            return 2;
+        }
+
+        return 0;
+    }
+}

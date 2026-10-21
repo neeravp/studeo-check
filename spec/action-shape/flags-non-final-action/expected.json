@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "action-shape",
+        "file": "app/Actions/UpdateUserAction.php",
+        "line": 5,
+        "subject": "UpdateUserAction",
+        "severity": "error",
+        "message": "Actions must be final classes. Declare it `final class`."
+    }
+]

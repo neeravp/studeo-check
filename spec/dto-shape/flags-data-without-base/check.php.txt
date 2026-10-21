@@ -1,0 +1,17 @@
+<?php
+
+use Studeo\Check\Engine\RuleSet;
+use Studeo\Check\Rules\Laravel\DtoShape;
+
+final class CheckRules
+{
+    public function rules(): RuleSet
+    {
+        return RuleSet::of(DtoShape::options(
+            inputBase: 'App\Data\BaseInput',
+            outputBase: 'App\Data\BaseData',
+        ));
+    }
+}
+
+return CheckRules::class;

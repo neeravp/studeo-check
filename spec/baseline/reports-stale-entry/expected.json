@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "baseline",
+        "file": "app/Services/OrderService.php",
+        "line": 1,
+        "subject": "OrderService::process",
+        "severity": "error",
+        "message": "Stale baseline entry for [method-naming]: no longer violated."
+    }
+]

@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Services;
+
+function doStuff(): void {}
+
+final class MiscService
+{
+    public function make(): object
+    {
+        return new class {
+            public function doWork(): void {}
+        };
+    }
+}

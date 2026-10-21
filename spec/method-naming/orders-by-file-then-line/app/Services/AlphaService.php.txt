@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Services;
+
+final class AlphaService
+{
+    public function process(): void {}
+
+    public function doWork(): void {}
+}

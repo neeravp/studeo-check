@@ -1,0 +1,24 @@
+<?php
+
+use Studeo\Check\Engine\RuleSet;
+use Studeo\Check\Profiles\ActionRules;
+use Studeo\Check\Profiles\Cap1Rules;
+use Studeo\Check\Profiles\LaravelRules;
+
+final class CheckRules
+{
+    public function rules(): RuleSet
+    {
+        return Cap1Rules::make()->rules()->merge(
+            ActionRules::make(
+                systemAttribute: 'App\Attributes\SystemAction',
+            )->rules(),
+            LaravelRules::make(
+                inputBase: 'App\Data\BaseInput',
+                outputBase: 'App\Data\BaseData',
+            )->rules(),
+        );
+    }
+}
+
+return CheckRules::class;

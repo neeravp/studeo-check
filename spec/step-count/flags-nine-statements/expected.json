@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "step-count",
+        "file": "app/Services/StepService.php",
+        "line": 7,
+        "subject": "StepService::run",
+        "severity": "error",
+        "message": "9 statements (max 8). Group steps into named private helpers so the method reads as a short pipeline."
+    }
+]

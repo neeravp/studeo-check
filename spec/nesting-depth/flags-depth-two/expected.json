@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "nesting-depth",
+        "file": "app/Services/NestedService.php",
+        "line": 7,
+        "subject": "NestedService::check",
+        "severity": "error",
+        "message": "control blocks nest to depth 2 (max 1). Move the inner block into a named helper."
+    }
+]

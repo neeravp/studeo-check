@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Services;
+
+final class CleanService
+{
+    public function execute(): int
+    {
+        return 1;
+    }
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "dto-shape",
+        "file": "app/Data/UserData.php",
+        "line": 5,
+        "subject": "UserData",
+        "severity": "error",
+        "message": "*Data classes must extend App\\Data\\BaseData. Add `extends BaseData`."
+    }
+]

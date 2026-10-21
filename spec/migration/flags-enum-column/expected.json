@@ -1,0 +1,10 @@
+[
+    {
+        "rule": "migration",
+        "file": "database/migrations/2026_01_01_000000_create_orders_table.php",
+        "line": 11,
+        "subject": "enum()",
+        "severity": "error",
+        "message": "uses ->enum(). Use ->string('column', 30)->index() with a backed enum cast."
+    }
+]
